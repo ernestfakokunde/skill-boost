@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav-container">
+       <div class="logo">SkillBoost</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">courses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+          <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+          </div>
+      </nav>
+    </header>
+    
+
+    <section class="body">
+      <div class="container">
+        <div class="body-head">
+          <h1> Boost Your Skills</h1>
+          <h1>With us</h1>
+        </div>
+
+        <div class="header-3">
+          <h3>Learn and improve your Skills with</h3>
+          <h3>our interactive courses</h3>
+        </div>
+
+        <div class="get-link">
+          <a href="#">Get started</a>
+        </div>
+      </div>
+    </section>
+
+  <section class="features">
+    <div class="container">
+     <h2>Features</h2>
+     <div class="features-grid">
+
+       <div class="feature-cards">
+         <div class="icon-container">
+
+         </div>
+         <h3>Track your progress</h3>
+         <p>Monitor our learning</p>
+       </div>
+        <div class="feature-cards">
+          <div class="icon-container"></div>
+          <h3>Interactive lessons</h3>
+          <p>Engage in hands on learning</p>
+        </div>
+        <div class="feature-cards">
+          <div class="icon-container"></div>
+          <h3>Expert instructors</h3>
+          <p>learn from industry professionals</p>
+        </div>
+         
+     </div>
+      </div>
+  </section>
+
+  <section class="news-letter">
+    <div class="container">
+
+      <div class="container-grid">
+
+      <div class="parts">
+    <h2>Stay Updated</h2>
+    <p>suscribe to our newsletter for the latest updates</p>
+
+    <div class="input-field">
+      <input type="email" placeholder="Enter your Email" >
+    </div>
+    </div>
+
+    <div class="parts">
+      <h2>Email signup</h2>
+      <p>Suscribe to our newsletter for the latest updates</p>
+      <div class="input-field">
+        <input type="email" placeholder="Enter your Email">
+      </div>
+      <div class="get-link link">
+      <a href="#">Sign up</a>
+      </div>
+    </div>
+
+    </div>
+  
+  </div>
+  </section>
+
+  <section class="scale">
+    <div class="container">
+      <h2>Join us and scale up</h2>
+      <h2>your skills with your friends</h2>
+      <div class="suscribe">
+      <p>suscribe to our learning programme and enjoy amazing benefits and tutoring</p>
+      </div>
+      <div class="wonder">
+        <div class="amazing">amazing</div>
+        <div class="tutor">tutoring</div>
+        <div class="one">one on one</div>
+      </div>
+
+      <div class="prem-sec">
+        <div class="premium">
+          <div class="prem-cards">
+            <h2>Standard User</h2>
+            <p><span> $42</span> annual </p>
+
+            <ul>
+              <li>Access to all courses</li>
+              <li>Community support</li>
+              <li>Progress tracking</li>
+              <li>Online tutoring</li>
+            </ul>
+            <div class="get-link">
+              <a href="#">Join now</a>
+            </div>
+          </div>
+
+ <div class="prem-cards">
+            <h2>Premium User</h2>
+            <p><span> $80</span> annual </p>
+
+            <ul>
+              <li>Access to all courses</li>
+              <li>Community support</li>
+              <li>Progress tracking</li>
+              <li>Online tutoring</li>
+            </ul>
+            <div class="get-link-2">
+              <a href="#">Join now</a>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="news-letter">
+
+    <div class="container">
+    <div class="faq-container">
+      <h2> frequently Asked Questions</h2>
+
+      <div class="faq">
+        <div class="questions">What does skillboost offers</div>
+        <div class="answers"> we offer a great and intuitive learning webapp to seamlessly help and build those new into tech putting them into a learning path</div>
+
+      </div>
+       <div class="faq">
+        <div class="questions">What does skillboost offers</div>
+        <div class="answers"> we offer a great and intuitive learning webapp to seamlessly help and build those new into tech putting them into a learning path</div>
+        
+      </div>
+
+       <div class="faq">
+        <div class="questions">What does skillboost offers</div>
+        <div class="answers"> we offer a great and intuitive learning webapp to seamlessly help and build those new into tech putting them into a learning path</div>
+        
+      </div>
+
+       <div class="faq">
+        <div class="questions">What does skillboost offers</div>
+        <div class="answers"> we offer a great and intuitive learning webapp to seamlessly help and build those new into tech putting them into a learning path</div>
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', function(){
+
+        nav.classList.toggle('active');
+      })
+
+      const accordiion = document.getElementsByClassName('faq');
+
+      for( i=0; i < accordiion.length; i++){
+        accordiion[i].addEventListener('click', function(){
+          this.classList.toggle('active');
+        })
+      }
+      // the accordion creates a variables that stores all html element with the class name faq
+      // then the for loop loops through the htm elements inside the html thats
+      // the question div and answer div
+      // then it adds an event listener for a click and a function to specofy the exact
+      // html element that was clicked and craetes an active class for it and then the js styling for the class is aplied
+
+
+    </script>
+</body>
+</html>
