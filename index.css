@@ -57,7 +57,7 @@ ul{
 .hamburger span {
   width: 20px;
   height: 2px;
-  background-color: #333;
+  background-color: white;
   display: block;
 }
 
@@ -289,6 +289,10 @@ padding: 0 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     position: absolute;
+    padding: 15px;
+    border-radius: 15px;
+    top: 60px;
+    right: 20px;
 
   }
   .features h2{
